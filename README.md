@@ -1,5 +1,4 @@
-# Ujwal Nagrikar - Professional Portfolio
-
+# Ujwal Nagrikar 
 A sophisticated, responsive portfolio website demonstrating expertise in cloud infrastructure, DevOps practices, and modern web development technologies.
 
 ## 📋 Project Overview
