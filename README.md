@@ -151,10 +151,5 @@ I welcome opportunities to collaborate on innovative projects and contribute to 
 - Propose improvements via pull requests
 - Reach out for professional collaboration
 
-## 📜 License & Attribution
-
-This project is open source and available under the MIT License. Attribution appreciated but not required.
-
----
 
 **Developed by Ujwal Nagrikar** | Cloud Engineer & DevOps Specialist | 2024
