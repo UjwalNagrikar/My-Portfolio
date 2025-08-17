@@ -477,11 +477,21 @@ h2 {
 .view-button i {
     margin-right: 8px;
 } 
+.project-card {
+  background: #0d1b2a;
+  border: 1px solid #00f5d4;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;               /* flexbox for vertical alignment */
+  flex-direction: column;      /* stack title, text, button */
+  justify-content: flex-start; /* keep content top-aligned */
+}
 
+.project-details {
+  flex-grow: 1;                /* take up remaining space */
+}
 
-
-
-
-
-
-
+.view-button {
+  align-self: flex-start;      /* button stays aligned left */
+  margin-top: auto;            /* push to bottom */
+}
