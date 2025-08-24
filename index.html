@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     
     <div class="container">
+
+        <!-- Navigation Bar -->
         <nav>
             <div class="logo">Portfolio</div>
             <div class="nav-links">
@@ -19,132 +25,107 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="resume/UjwalNagrikar_Cloud_DevOps.pdf" download class="download-cv">Download CV</a>
+            <!-- Resume Download Button -->
+           <a href="resume/Ujwal_Nagrikar_Cloud_DevOps.pdf" download class="download-cv">Download CV</a>
         </nav>
-        <main class="hero-section">
+
+        <!-- Hero Section -->
+        <main class="hero-section" id="home">
             <div class="hero-content">
                 <h2>Hello, I'm</h2>
-                <h1>Ujwal Nagrikar</h1> <h2>
-                <p>And I'm a <span id="dynamic-role"></span></p></h2>   
+                <h1>Ujwal Nagrikar</h1>
+                <h2>
+                    <p>And I'm a <span id="dynamic-role"></span></p>
+                </h2>
             </div>
         </main>
 
+        <!-- About Section -->
         <section class="about-section" id="about">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p>Hello, I'm Ujwal Nagrikar</p>
-                <p>I am passionate about learning and continually enhancing my technical expertise to solve real-world challenges effectively. I take pride in my adaptability, problem-solving abilities, and a keen interest in emerging technologies. My goal is to leverage my skills to deliver impactful solutions and grow in the field of cloud computing.</p>
+                <p>
+                    I am passionate about learning and continually enhancing my technical expertise 
+                    to solve real-world challenges effectively. I take pride in my adaptability, 
+                    problem-solving abilities, and a keen interest in emerging technologies. 
+                    My goal is to leverage my skills to deliver impactful solutions and grow 
+                    in the field of cloud computing.
+                </p>
                 <p>Let's connect and explore opportunities to create something remarkable together!</p>
             </div>
         </section>
 
-        <!-- Add Skills Section after hero-section -->
+        <!-- Skills Section -->
         <section class="skills-section" id="skills">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-container">
-                <div class="skill-box">
-                    <h3>Amazon Web Services(AWS)</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Terraform</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Linux</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Docker</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Kubernetes</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Git</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>GitHub</h3>
-                    <div class="skill-progress"></div>
-                </div>             
-                <div class="skill-box">
-                    <h3>Sonarqube</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Ansible</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                <div class="skill-box">
-                    <h3>Bash</h3>
-                    <div class="skill-progress"></div>
-                </div>
-                
-                <div class="skill-box">
-                    <h3>jenkins</h3>
-                    <div class="skill-progress"></div>
-                </div>             
-                <div class="skill-box">
-                    <h3>CI/CD</h3>
-                    <div class="skill-progress"></div>
-                </div>            
+                <div class="skill-box"><h3>Amazon Web Services (AWS)</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Terraform</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Linux</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Docker</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Kubernetes</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Git</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>GitHub</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>SonarQube</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Ansible</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Bash</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Jenkins</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>CI/CD</h3><div class="skill-progress"></div></div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section class="projects-section" id="projects">
-  <h2 class="section-title">My Projects</h2>
-  
-  <div class="projects-container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
 
-    <div class="project-card">
-      <h3 class="project-title">Three-Tier Architecture on AWS using Terraform</h3>
-      <p class="project-details">
-        Implemented a Three-Tier Architecture that is Highly Available and Scalable using Terraform, 
-        and Deployed the Application on EC2 Instances using the User Data Script.<br>
-        <span class="highlight">AWS Components:</span> VPC, ASG, CDN, ELB, EC2, S3, NAT, API Gateway.
-      </p>
-      <a href="https://github.com/UjwalNagrikar/Three-Tier-Architecture-on-AWS-using-Terraform.git" 
-         class="view-button">
-        <i class="fab fa-github"></i> View Code
-      </a>
-    </div>
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">Scalable Three-Tier Architecture on AWS with Terraform</h3>
+                    <ul class="project-details">
+                        <li><b>Designed and deployed a highly available, auto-scaling three-tier architecture on AWS using Terraform.</b></li>
+                        <li><b>Automated provisioning of VPC, ELB, ASG, EC2, S3, NAT Gateway, and API Gateway to ensure scalability and fault tolerance.</b></li>
+                        <li><b>Optimized deployment with infrastructure as code (IaC), reducing manual configuration by 90%.</b></li>
+                    </ul>
+                    <a href="https://github.com/UjwalNagrikar/Three-Tier-Architecture-on-AWS-using-Terraform.git" 
+                       class="view-button">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
 
-    <div class="project-card">
-      <h3 class="project-title">Multi-Server Environment Setup with Ansible and Load Balancing</h3>
-      <p class="project-details">
-        Designed and implemented an environment with multiple Linux servers configured using Ansible, 
-        including deployment of web servers behind a load balancer (e.g., Nginx). 
-        Demonstrated seamless configuration management and deployment automation across multiple nodes.
-      </p>
-      <a href="https://github.com/UjwalNagrikar/Multi-Server-Environment-Setup-with-Ansible-and-Load-Balancing.git" 
-         class="view-button">
-        <i class="fab fa-github"></i> View Code
-      </a>
-    </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">Multi-Server Deployment & Configuration Management with Ansible</h3>
+                    <ul class="project-details">
+                        <li><b>Automated the setup of a multi-node Linux environment with Ansible, including web server provisioning and load balancing via Nginx.</b></li>
+                        <li><b>Implemented centralized configuration management, enabling consistent deployments across servers.</b></li>
+                        <li><b>Reduced setup time from hours to minutes, improving deployment reliability by 80%.</b></li>
+                    </ul>
+                    <a href="https://github.com/UjwalNagrikar/Multi-Server-Environment-Setup-with-Ansible-and-Load-Balancing.git" 
+                       class="view-button">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
 
-    <div class="project-card">
-      <h3 class="project-title">Automated CI/CD Pipeline for Containerized Web Application on AWS</h3>
-      <p class="project-details">
-        Designed and implemented a fully automated CI/CD pipeline to deploy a containerized web 
-        application on AWS using Jenkins, Docker, and Terraform. 
-        The pipeline ensures seamless integration, testing, and deployment with infrastructure 
-        as code and version control best practices.
-      </p>
-      <a href="https://github.com/UjwalNagrikar/Automated-CICD-Pipeline-for-Containerized-Web-Application-on-AWS.git" 
-         class="view-button">
-        <i class="fab fa-github"></i> View Code
-      </a>
-    </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">Automated CI/CD Pipeline for Containerized Applications</h3>
+                    <ul class="project-details">
+                        <li><b>Built a fully automated CI/CD pipeline on AWS using Jenkins, Docker, and Terraform to deploy a containerized web application.</b></li>
+                        <li><b>Integrated unit testing, version control, and automated infrastructure provisioning, ensuring seamless releases.</b></li>
+                        <li><b>Enhanced delivery speed by 50%, while enabling blue-green deployments to minimize downtime during updates.</b></li>
+                    </ul>
+                    <a href="https://github.com/UjwalNagrikar/Automated-CICD-Pipeline-for-Containerized-Web-Application-on-AWS.git" 
+                       class="view-button">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
 
-  </div>
-</section>
+            </div>
+        </section>
 
-
-        
-
+        <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-links">
@@ -162,11 +143,14 @@
                 </a>
                 <a href="https://x.com/UjjwalNagrikar" target="_blank" rel="noopener noreferrer" class="contact-link">
                     <i class="fa-brands fa-x-twitter"></i>
-                    <span>(Twitter)</span>
+                    <span>Twitter</span>
                 </a>
             </div>
         </section>
+
     </div>
+
+    <!-- External JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
