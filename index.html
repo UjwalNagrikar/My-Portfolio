@@ -61,18 +61,26 @@
         <section class="skills-section" id="skills">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-container">
-                <div class="skill-box"><h3>Amazon Web Services (AWS)</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>Terraform</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>Linux</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>AWS</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>GCP</h3><div class="skill-progress"></div></div>
                 <div class="skill-box"><h3>Docker</h3><div class="skill-progress"></div></div>
                 <div class="skill-box"><h3>Kubernetes</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>Git</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>GitHub</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>SonarQube</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Terraform</h3><div class="skill-progress"></div></div>
                 <div class="skill-box"><h3>Ansible</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>Bash</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Helm</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>ArgoCD</h3><div class="skill-progress"></div></div>
                 <div class="skill-box"><h3>Jenkins</h3><div class="skill-progress"></div></div>
-                <div class="skill-box"><h3>CI/CD</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>GitHub Actions</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>GitLab CI/CD</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Linux</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Prometheus</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Grafana</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>ELK Stack</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Python (Boto3)</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>Bash</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>SQL</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>NVIDIA CUDA</h3><div class="skill-progress"></div></div>
+                <div class="skill-box"><h3>vLLM / LLM Deployment</h3><div class="skill-progress"></div></div>
             </div>
         </section>
         <!-- Projects Section -->
@@ -82,13 +90,14 @@
 
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <h3 class="project-title">Scalable Three-Tier Architecture on AWS with Terraform</h3>
+                    <h3 class="project-title">Kubernetes Observability & Automated Remediation</h3>
                     <ul class="project-details">
-                        <li><b>Designed and deployed a highly available, auto-scaling three-tier architecture on AWS using Terraform.</b></li>
-                        <li><b>Automated provisioning of VPC, ELB, ASG, EC2, S3, NAT Gateway, and API Gateway to ensure scalability and fault tolerance.</b></li>
-                        <li><b>Optimized deployment with infrastructure as code (IaC), reducing manual configuration by 90%.</b></li>
+                        <li><b>Defined a 99.9% availability SLO backed by SLIs for request success rate, p95/p99 latency, error rate, and pod availability.</b></li>
+                        <li><b>Instrumented workloads with custom Prometheus metrics and built Grafana dashboards tracking the golden signals.</b></li>
+                        <li><b>Built a closed-loop automated remediation pipeline (Prometheus → Alertmanager → Python/Bash restart/rollback) that reduces MTTR.</b></li>
+                        <li><b>Automated health checks and smoke tests with ArgoCD drift detection and rollback.</b></li>
                     </ul>
-                    <a href="https://github.com/UjwalNagrikar/Three-Tier-Architecture-on-AWS-using-Terraform.git" 
+                    <a href="#" 
                        class="view-button">
                         <i class="fab fa-github"></i> View Code
                     </a>
@@ -96,13 +105,14 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <h3 class="project-title">Multi-Server Deployment & Configuration Management with Ansible</h3>
+                    <h3 class="project-title">Automated CI/CD Platform with Security Enforcement on GKE</h3>
                     <ul class="project-details">
-                        <li><b>Automated the setup of a multi-node Linux environment with Ansible, including web server provisioning and load balancing via Nginx.</b></li>
-                        <li><b>Implemented centralized configuration management, enabling consistent deployments across servers.</b></li>
-                        <li><b>Reduced setup time from hours to minutes, improving deployment reliability by 80%.</b></li>
+                        <li><b>Provisioned GKE infrastructure with Terraform, reducing environment provisioning from 2 hours to under 20 minutes (83% faster).</b></li>
+                        <li><b>Built a GitOps CI/CD pipeline with GitHub Actions, ArgoCD, and Helm, eliminating all manual release steps.</b></li>
+                        <li><b>Integrated Trivy container scanning and vulnerability gates to block high/critical CVEs before deployment.</b></li>
+                        <li><b>Managed 15 Kubernetes workloads with ArgoCD drift detection, reducing manual deployment effort by 80%.</b></li>
                     </ul>
-                    <a href="https://github.com/UjwalNagrikar/Multi-Server-Environment-Setup-with-Ansible-and-Load-Balancing.git" 
+                    <a href="#" 
                        class="view-button">
                         <i class="fab fa-github"></i> View Code
                     </a>
@@ -110,13 +120,14 @@
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <h3 class="project-title">Automated CI/CD Pipeline for Containerized Applications</h3>
+                    <h3 class="project-title">Production-Grade vLLM Deployment on Kubernetes</h3>
                     <ul class="project-details">
-                        <li><b>Built a fully automated CI/CD pipeline on AWS using Jenkins, Docker, and Terraform to deploy a containerized web application.</b></li>
-                        <li><b>Integrated unit testing, version control, and automated infrastructure provisioning, ensuring seamless releases.</b></li>
-                        <li><b>Enhanced delivery speed by 50%, while enabling blue-green deployments to minimize downtime during updates.</b></li>
+                        <li><b>Engineered a GPU-powered LLM inference platform on AWS using K3s, vLLM, and Qwen2.5-3B-Instruct on 1× Tesla T4 (15 GB VRAM).</b></li>
+                        <li><b>Diagnosed and resolved GPU-runtime and inference compatibility issues, restoring stable inference with 0 pod restarts.</b></li>
+                        <li><b>Automated deployment with Terraform + Helm, including persistent model storage and GPU-aware scheduling.</b></li>
+                        <li><b>Exposed and validated an OpenAI-compatible inference API with Prometheus + Grafana observability.</b></li>
                     </ul>
-                    <a href="https://github.com/UjwalNagrikar/Automated-CICD-Pipeline-for-Containerized-Web-Application-on-AWS.git" 
+                    <a href="#" 
                        class="view-button">
                         <i class="fab fa-github"></i> View Code
                     </a>
